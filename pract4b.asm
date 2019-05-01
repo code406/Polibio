@@ -4,22 +4,22 @@
 
 ; DEFINICION DEL SEGMENTO DE DATOS
 DATOS SEGMENT
-	INPUT_LETR	DB	"SBM2019", "$"
-	INPUT_NUM	DB	"54","25","44","12","66","11","23","$"
-	OUT_STR		DB	128 DUP(0)
-	ENC_MSG		DB	10, 13, "  - CODIFICANDO <", "$"
-	DOS_PUNTOS	DB	">: ", "$"
-	DEC_MSG		DB  10, 13, "  - DECODIFICANDO <", "$"
-	MATRIZ		DB	1BH,"[2","J", 10, 13
-        		DB	"  - MATRIZ DE POLIBIO:", 10, 10, 13
-        		DB	"      | 1  2  3  4  5  6", 10, 13
-        		DB	"    --+-----------------", 10, 13
-        		DB	"    1 | 1  2  3  4  5  6", 10, 13
-        		DB	"    2 | 7  8  9  A  B  C", 10, 13
-        		DB	"    3 | D  E  F  G  H  I", 10, 13
-        		DB	"    4 | J  K  L  M  N  O", 10, 13
-        		DB	"    5 | P  Q  R  S  T  U", 10, 13
-        		DB	"    6 | V  W  X  Y  Z  0", 10, 13, "$"
+	INPUT_LETR  DB  "SBM2019", "$"
+	INPUT_NUM   DB  "54","25","44","12","66","11","23","$"
+	OUT_STR     DB  128 DUP(0)
+	ENC_MSG     DB  10, 13, "  - CODIFICANDO <", "$"
+	DOS_PUNTOS  DB  ">: ", "$"
+	DEC_MSG     DB  10, 13, "  - DECODIFICANDO <", "$"
+	MATRIZ      DB  1BH,"[2","J", 10, 13
+	            DB  "  - MATRIZ DE POLIBIO:", 10, 10, 13
+	            DB  "      | 1  2  3  4  5  6", 10, 13
+	            DB  "    --+-----------------", 10, 13
+	            DB  "    1 | 1  2  3  4  5  6", 10, 13
+	            DB  "    2 | 7  8  9  A  B  C", 10, 13
+	            DB  "    3 | D  E  F  G  H  I", 10, 13
+	            DB  "    4 | J  K  L  M  N  O", 10, 13
+	            DB  "    5 | P  Q  R  S  T  U", 10, 13
+	            DB  "    6 | V  W  X  Y  Z  0", 10, 13, "$"
 DATOS ENDS
 
 ; DEFINICION DEL SEGMENTO DE PILA
