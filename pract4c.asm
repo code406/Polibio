@@ -19,8 +19,8 @@ DATOS SEGMENT
 	            DB  "    4 | J  K  L  M  N  O", 10, 13
 	            DB  "    5 | P  Q  R  S  T  U", 10, 13
 	            DB  "    6 | V  W  X  Y  Z  0", 10, 13, "$"
-	PEDIR_OP    DB  10, 13,"  - INTRODUCE OPCION (cod, decod o quit): ","$"
-	PEDIR_INPUT DB  10, 10, 13, "  - INTRODUCE LA CADENA: ", "$"
+	PEDIR_OP    DB  10,13,"  - INTRODUCE OPCION (cod, decod o quit): $"
+	PEDIR_INPUT DB  10,10,13, "  - INTRODUCE LA CADENA: ", "$"
 	OPCION      DB  6 DUP(0)
 	OP_COD      DB  "cod", "$"
 	OP_DECOD    DB  "decod", "$"
